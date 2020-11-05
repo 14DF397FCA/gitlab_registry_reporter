@@ -6,7 +6,8 @@ A tool to make a report about the number of tags of images in the GitLab docker 
 ```shell script
 git clone git@github.com:14DF397FCA/gitlab_registry_reporter.git
 cd gitlab_registry_reporter
-python3 -m venv
+python3 -m venv ./venv
+soure ./venv/bin/activate
 ./venv/bin/pip install -r requirements.txt
 ./venv/bin/python3 main.py -s https://gitlab.example.com -t yourprivatetoken
 ```
